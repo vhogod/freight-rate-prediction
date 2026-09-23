@@ -17,9 +17,16 @@ python score.py --predictions validation_predictions.csv --december-predictions 
 
 The scorer validates both files and creates `scorer_results/candidate_december.png`.
 
-## Submit
+## How to run this project
 
-- GitHub repository containing your code, dependencies, and run instructions
-- `validation_predictions.csv`
-- PDF or DOCX report containing your validation, data split approach and `candidate_december.png`
-- 2-3 minute Loom link
+1. Create the conda environment:
+
+2. Launch Jupyter from this project folder:
+
+3. Open `freight_rate_model.ipynb` and run all cells top to bottom (Cell → Run All). This will:
+   - Clean and explore `train-test.csv`
+   - Train and evaluate the models
+   - Generate `validation_predictions.csv`
+   - Generate the completed `december-chart-inputs.csv`
+
+4. Validate the outputs and generate the chart:
